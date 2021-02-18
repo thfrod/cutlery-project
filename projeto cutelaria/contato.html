@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <title>Cutelaria - Contato</title>
+
+    <!-- CSS  -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+    
+  </head>
+  <body>
+    <div class="navbar-fixed">
+      <nav class="black" role="navigation">
+        <div class="nav-wrapper container ">
+          <!--LOGO-->
+          <a id="logo-container" href="index.html" class="brand-logo white-text">Cutelaria</a>
+
+          <!-- ICONE PARA ABRIR MOBILE--> 
+          <a href="#" data-target="mobile-navbar" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+          </a>
+          <!-- Menu Desktop -->
+          <ul id ="navbar-itens"class="right hide-on-med-and-down">
+            <li><a class="white-text" href="index.html">Home</a></li>
+            <li><a class="white-text" href="#">Nossos produtos</a></li>
+            <li><a class="white-text" href="historia.html">Nossa História</a></li>
+            <li><a class="white-text" href="contato.html">Contate-nos</a></li>
+            <li><a  class="dropdown-trigger white-text" data-target="dropdown1">Social<i class="material-icons right">arrow_drop_down</i></a></li>
+          </ul> 
+          <!-- Menu Desktop - Dropdown - Social -->
+          <ul id="dropdown1" class="dropdown-content ">
+            <li><a class="black-text" href="https://www.facebook.com/">Facebook</a></li>
+            <li><a class="black-text" href="https://www.instagram.com">Instagram</a></li>
+            <li><a class="black-text" href="https://www.youtube.com">Youtube</a></li>
+          </ul>
+      </nav>
+    </div>
+
+    <!-- MENU MOBILE -->
+    <ul id = "mobile-navbar"class="sidenav">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="#">Nossos produtos</a></li>
+      <li><a href="historia.html">Nossa História</a></li>
+      <li><a href="contato.html">Contate-nos</a></li>
+      <li><a class="dropdown-trigger" data-target="dropdown2">Social<i class="material-icons right">arrow_drop_down</i></a></li>
+    </ul>
+
+    <!-- Menu Mobile - Dropdown - Social -->
+    <ul id="dropdown2" class="dropdown-content ">
+      <li class="text-darken-2"><a href="https://www.facebook.com/">Facebook</a></li>
+      <li><a href="https://www.instagram.com">Instagram</a></li>
+      <li><a href="https://www.youtube.com">Youtube</a></li>
+    </ul>
+    
+      <!-- Contato com SideNav Responsivo-->
+      <div class="container">
+        <div class="row">
+          <!--Div do sideNav -->
+          <div class="col s12 m4 l3"> 
+              <ul class="collapsible">
+                <li >
+                  <div class="collapsible-header"><i class="material-icons">place</i>Localização</div>
+                  <div class="collapsible-body"><span>Estamos localizados na</span></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">email</i>Email</div>
+                  <div class="collapsible-body"><span>contato@Cutelaria.com</span></div>
+                </li>
+                <li>
+                  <div class="collapsible-header"><i class="material-icons">phone</i>Telefone</div>
+                  <div class="collapsible-body"><span>Celular: 51 97777-7777 </span><p>Fixo: 51 7777-7777</p></div>
+                </li>
+              </ul>
+
+          </div>
+
+          <!--Div do Form responsivo-->
+            <div class="col s12 m8 l9"> 
+            
+              <!-- FORMULÁRIO DE CONTATO CONFIGURA DO EMAIL.PHP-->
+              <form  class = "field" action="php/email.php"  method="POST"> 
+                      
+                      
+                      
+                      
+                <h4>Fale conosco <i class="material-icons">insert_comment</i></h4>
+                <p class="teal-text darken-3">Seu contato é muito importante para nós:</p>
+                <p class="teal-text darken-3">Envie-nos um e-mail preenchendo os campos abaixo, e logo retornaremos o seu contato.</p>
+                <p>
+                Nome:
+                  <input type="text" size="30" name="name"  placeholder="Digite seu nome."> 
+                </p>   
+                
+                <p>
+                E-mail:<br /> 
+                  <input type="email" size="30" name="email" placeholder="Digite seu email."> 
+                </p>   
+                
+                <p> 
+                Sua mensagem: <br /> 
+                  <textarea type="text" size="35" name="message" placeholder="Deixe aqui sua mensagem."> </textarea>
+                </p>   
+                
+                <p> 
+                  <input type="submit" name="BTEnvia" value="Enviar" class="btn"> 
+                  <input type="reset" name="BTApaga" value="Apagar" class="btn"> 
+                </p> 
+              </form>
+            
+          </div>
+
+        </div>
+      </div>
+    
+
+
+    <!--Rodapé Responsivo-->
+    <footer class="page-footer black">
+      <div class="container ">
+        <div class="row ">
+          <div class="col l6 s12">
+            <h5 class="white-text">Onde nos achar</h5>
+            <p class="grey-text text-lighten-4 ">Somos um empresa formada por um grupo de amigos nascidos e criados no Rio Grande do Sul com um espírito gaúcho pulsante em nossas veias.</p>
+          </div>
+          
+          <div class="col l3 s12">
+            <h5 class="white-text">Contato</h5>
+            <ul>
+              <li>contatoCutelaria@gmail.com</li>
+              <li>Celular: (51) 9-7777-7777</li>
+              <li>Fixo: (51) 7777-7777</a></li>
+              
+            </ul>
+          </div>
+
+          
+        </div>
+        
+
+        
+        
+      </div>
+      <div class="footer-copyright">
+        <div class="container">
+        Made by <a class="brown-text text-lighten-3" href="https://www.linkedin.com/in/thiago-ferreira-rodrigues-6753341b3">Thfrod</a>
+        </div>
+      </div>
+    </footer>
+
+
+    <!--  Scripts-->
+    
+    <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+    <script src="js/materialize.js"></script>
+    <script src="js/init.js"></script>
+    <script>
+      $(document).ready(function(){
+        $('.collapsible').collapsible();
+      });
+    </script>
+
+  </body>
+</html>
